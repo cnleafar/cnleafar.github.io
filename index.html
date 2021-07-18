@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portifólio V0.3</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="c-loading" id="loading">
+            <div class="c-loaderIcon"></div>
+    </div>
+
+    <header class="l-header">
+        <div class="l-header__container">
+            <div class="l-header__logo">
+                <a href="#">
+                    <h1>
+                        RAFAEL N
+                        <svg width="136" height="31" viewBox="0 0 136 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d)">
+                            <path d="M23.064 10.12C23.064 11.768 22.624 13.144 21.744 14.248C20.864 15.352 19.624 16.112 18.024 16.528L21.096 22H18.552L15.624 16.864H15.168H10.68L9.672 22H7.248L10.608 5.2H16.872C18.84 5.2 20.36 5.632 21.432 6.496C22.52 7.344 23.064 8.552 23.064 10.12ZM15.24 14.824C16.968 14.824 18.304 14.44 19.248 13.672C20.192 12.904 20.664 11.792 20.664 10.336C20.664 9.328 20.32 8.568 19.632 8.056C18.944 7.544 17.952 7.288 16.656 7.288H12.6L11.088 14.824H15.24ZM36.3735 17.8H27.3975L24.7335 22H22.1415L33.1335 5.2H35.5095L39.7575 22H37.3815L36.3735 17.8ZM35.8935 15.88L33.9015 7.6L28.6215 15.88H35.8935ZM47.5916 7.288L46.4156 13.144H54.8636L54.4556 15.208H46.0076L44.6636 22H42.2636L45.6236 5.2H57.4796L57.0716 7.288H47.5916ZM68.4126 17.8H59.4366L56.7726 22H54.1806L65.1726 5.2H67.5486L71.7966 22H69.4206L68.4126 17.8ZM67.9326 15.88L65.9406 7.6L60.6606 15.88H67.9326ZM79.6307 7.288L78.5987 12.448H87.0467L86.6387 14.488H78.1907L77.1107 19.912H86.9267L86.5187 22H74.3027L77.6627 5.2H89.5187L89.1107 7.288H79.6307ZM93.7408 5.2H96.1408L93.1888 19.912H102.309L101.901 22H90.3808L93.7408 5.2ZM128.884 5.2L125.524 22H123.556L116.044 9.064L113.476 22H111.076L114.436 5.2H116.404L123.916 18.136L126.484 5.2H128.884Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d" x="0.247986" y="0.200012" width="135.636" height="30.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                            <feOffset dy="2"/>
+                            <feGaussianBlur stdDeviation="3.5"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.4 0 0 0 0 0.54902 0 0 0 0 0.682353 0 0 0 1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+
+                    </h1>
+                </a>
+            </div>
+
+            <div class="l-header__menu">
+                <nav class="c-main-menu">
+                    <ul class="c-main-menu__list">
+                        <li class="c-main-menu__item">
+                            <a href="#" class="c-main-menu__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="c-main-menu__item">
+                            <a href="#" class="c-main-menu__link">
+                                Trabalhos
+                            </a>
+                        </li>
+                        <li class="c-main-menu__item">
+                            <a href="#" class="c-main-menu__link">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="l-main js-main">
+
+        <div class="l-main__container">
+
+            <div class="c-header">
+                <div class="c-header__container">
+                    <h3 class="c-header__title">
+                        Trabalhos Recentes
+                    </h3>
+                </div>
+            </div>
+
+
+            <!-- Slider main container -->
+            <div class="swiper-container" style="display: none;">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        Slide 1
+                        <figure class="swiper-slide__imagem">
+                            <img src="https://rfaaelnc.github.io/ny.jpg" alt="Imagem 01">
+                        </figure>
+                        <div class="swiper-slide__info">
+                            <!-- <div class="details"> -->
+                                <h3 class="swiper-slide__title">
+                                    Implementação de Layout
+                                </h3>
+
+                                <p class="swiper-slide__text">
+                                    E-commerce usando tecnologia tray
+                                </p>
+                            <!-- </div> -->
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        Slide 2
+                        <figure class="swiper-slide__imagem">
+                            <img src="https://rfaaelnc.github.io/ny.jpg" alt="Imagem 01">
+                        </figure>
+                        <div class="swiper-slide__info">
+                            <!-- <div class="details"> -->
+                                <h3 class="swiper-slide__title">
+                                    Implementação de Layout
+                                </h3>
+
+                                <p class="swiper-slide__text">
+                                    E-commerce usando tecnologia tray
+                                </p>
+                            <!-- </div> -->
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <!-- CONTATO -->
+            <!-- modify this form HTML and place wherever you want your form -->
+            <section class="contact">
+                <form class="form-contact" id="my-form" action="https://formspree.io/f/mbjqalwe" method="POST">
+
+                    <div class="form-contact__group">
+                        <label for="name">Nome</label>
+                        <input type="name" class="form-contact__control" name="name" />
+                    </div>
+
+                    <div class="form-contact__group">
+                        <label>Email:</label>
+                        <input type="email" class="form-contact__control" name="email" />
+                    </div>
+
+                    <div class="form-contact__group">
+                        <label>Message:</label>
+                        <input type="text" class="form-contact__control" name="message" />
+                    </div>
+
+                    <button id="my-form-button" class="form-contact__button">Submit</button>
+
+                    <p id="my-form-status"></p>
+                </form>
+            </section>
+            <!-- Place this script at the end of the body tag -->
+            
+            <script>
+                var form = document.getElementById("my-form");
+                
+                async function handleSubmit(event) {
+                    event.preventDefault();
+                    var status = document.getElementById("my-form-status");
+                    var data = new FormData(event.target);
+                    fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                    }).then(response => {
+                    status.innerHTML = "Thanks for your submission!";
+                    form.reset()
+                    }).catch(error => {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                    });
+                }
+                form.addEventListener("submit", handleSubmit);
+            </script>
+
+        </div>
+
+    </main>
+
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__copyright">
+                © 2020 | 2021 - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Swiper slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
