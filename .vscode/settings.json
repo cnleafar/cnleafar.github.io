@@ -1,0 +1,11 @@
+{
+    "files.encoding": "utf8",
+    "files.associations": {
+        "*.js": "javascript",
+        "*.extension": "html"
+    },
+    "[html]": {
+        // "files.encoding": "iso88591"
+        "files.encoding": "utf8"
+    },
+}
