@@ -1,0 +1,34 @@
+[data-page] {
+    display: none;
+}
+
+[data-page].active {
+    display: block;
+}
+
+[data-page='contact'].active {
+    display: flex;
+}
+
+.c-main-menu__link {
+    position: relative;
+}
+
+
+.c-main-menu__link:hover:after {
+    content: "";
+    width: 4px;
+    height: 14px;
+    background-color: #0077ff;
+    position: absolute;
+    left: -9px;
+}
+
+.c-main-menu__link.active:after {
+    content: "";
+    width: 4px;
+    height: 14px;
+    background-color: #00ff2b;
+    position: absolute;
+    left: -9px;
+}
