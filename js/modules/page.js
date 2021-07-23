@@ -40,6 +40,10 @@ function initPage() {
 
                     pageActive.classList.add('active');
                     
+                    console.log(this);
+                    
+                    console.log('pageActive',pageActive);
+                    
                     console.log('title',pageActive.getAttribute('data-title'));
 
                     // opc1
