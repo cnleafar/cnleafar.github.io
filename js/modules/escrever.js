@@ -8,7 +8,7 @@ export default function initEscrever(text,local) {
     local.textContent = ' ';
 
     textSplit.forEach((letter,i) => {
-        console.log(letter);
+//         console.log(letter);
         setTimeout(function() {
 
         local.textContent += letter;
