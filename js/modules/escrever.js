@@ -1,14 +1,15 @@
 export default function initEscrever(text) {
 
-    const textSplit = text.split('');
+
+    const textSplit = text.innerText.split('');
     // console.log(textSplit);
 
     // console.log(textSplit);
     
-    text.innerText = ' ';
+    text.innerText = null;
 
     textSplit.forEach((letter,i) => {
-//         console.log(letter);
+        console.log(letter);
         setTimeout(function() {
 
         text.textContent += letter;
