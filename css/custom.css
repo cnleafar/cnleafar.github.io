@@ -1,9 +1,17 @@
 [data-page] {
-    display: none;
+    /* display: none; */
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    left: -100%;
+    transition: all 0.3s;
 }
 
 [data-page].active {
-    display: block;
+    /* display: block; */
+    max-height: 612px;
+    left: 0;
+    transition: all 0.3s;
 }
 
 [data-page='contact'].active {
@@ -14,21 +22,43 @@
     position: relative;
 }
 
-
-.c-main-menu__link:hover:after {
+.c-main-menu__link:after {
     content: "";
-    width: 4px;
+    width: 1px;
     height: 14px;
-    background-color: #0077ff;
+    background-color: #393939;
     position: absolute;
     left: -9px;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+    transition: all .5s ease-in-out;
+}
+
+
+.c-main-menu__link:hover:after {
+    width: 4px;
+    background-color: #0077ff;
 }
 
 .c-main-menu__link.active:after {
-    content: "";
     width: 4px;
-    height: 14px;
     background-color: #00ff2b;
-    position: absolute;
-    left: -9px;
+}
+
+
+.c-header__title:after {
+    content: "I";
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink 1s infinite;
+
+}
+
+@keyframes blink {
+
+    to { opacity: 0; }
+    from { opacity: 1; }
+
+
 }
