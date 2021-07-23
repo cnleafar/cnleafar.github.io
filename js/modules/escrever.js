@@ -9,7 +9,7 @@ export default function initEscrever(text) {
     text.innerText = '';
 
     textSplit.forEach((letter,i) => {
-        console.log(letter);
+//         console.log(letter);
         setTimeout(function() {
 
         text.textContent += letter;
