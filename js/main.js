@@ -4,6 +4,6 @@ import initEscrever from './modules/escrever.js';
 
 const titlePag = document.querySelector('.c-header__title');
 
-initEscrever('Trabalhos Recentes',titlePag);
+initEscrever('Trabalhos Recentes');
 Site();
 initPage();
