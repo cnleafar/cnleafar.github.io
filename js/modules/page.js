@@ -40,6 +40,7 @@ function initPage() {
 
                     pageActive.classList.add('active');
                     
+                    console.log('title',pageActive.getAttribute('data-title'));
 
                     // opc1
                     // initEscrever(pageActive.getAttribute('data-title'),titlePag);
