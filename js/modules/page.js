@@ -39,20 +39,17 @@ function initPage() {
                     item.target.classList.add('active');
 
                     pageActive.classList.add('active');
-                    
+
                     console.log(this);
                     
-                    console.log('pageActive',pageActive);
-                    
-                    console.log('title',pageActive.getAttribute('data-title'));
 
                     // opc1
                     // initEscrever(pageActive.getAttribute('data-title'),titlePag);
 
                     
                     // opc 2
-                    titlePag.textContent = pageActive.getAttribute('data-title');
-//                     initEscrever(titlePag);
+                    titlePag.innerText = pageActive.getAttribute('data-title');
+                    initEscrever(titlePag);
 
 
                 }
