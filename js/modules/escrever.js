@@ -7,7 +7,7 @@ export default function initEscrever(text) {
 
     // console.log(textSplit);
     
-    text.innerText = '';
+    text.textContent = '';
 
     textSplit.forEach((letter,i) => {
 //         console.log(letter);
