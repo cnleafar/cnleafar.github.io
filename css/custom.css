@@ -55,6 +55,10 @@
 
 }
 
+.swiper-container {
+    margin: 0 auto 0;
+}
+
 @keyframes blink {
 
     to { opacity: 0; }
