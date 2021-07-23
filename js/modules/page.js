@@ -40,9 +40,9 @@ function initPage() {
 
                     pageActive.classList.add('active');
                     
-                    setTimeout(function() {
-                        Escrever(pageActive.getAttribute('data-title'),titlePag);
-                    },100);
+                    titlePag.innerText = pageActive.getAttribute('data-title');
+                    
+                        Escrever(titlePag);
 
                     
                     // titlePag.innerText = pageActive.getAttribute('data-title');
