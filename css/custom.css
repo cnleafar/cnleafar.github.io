@@ -5,6 +5,7 @@
     max-height: 0;
     left: -100%;
     transition: all 0.3s;
+    margin:0;
 }
 
 [data-page].active {
