@@ -1,6 +1,6 @@
 export default function initEscrever(text) {
 
-    console.log(text);
+    console.log(text.textContent);
 
     const textSplit = text.innerText.split('');
     // console.log(textSplit);
