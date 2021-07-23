@@ -67,7 +67,7 @@
 
 
             <!-- Slider main container -->
-            <section class="home js-home active" data-page="home">
+            <section class="home js-home active" data-page="home" data-title="Trabalhos Recentes">
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -108,6 +108,28 @@
 
                             </div>
                         </div>
+
+                        <div class="swiper-slide">
+                            Slide 2
+                            <figure class="swiper-slide__imagem">
+                                <img src="https://rfaaelnc.github.io/ny.jpg" alt="Imagem 01">
+                            </figure>
+                            <div class="swiper-slide__info">
+                                <!-- <div class="details"> -->
+                                    <h3 class="swiper-slide__title">
+                                        Implementação de Layout
+                                    </h3>
+
+                                    <p class="swiper-slide__text">
+                                        E-commerce usando tecnologia tray
+                                    </p>
+                                <!-- </div> -->
+
+                            </div>
+                        </div>
+
+                        <!--<div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>-->
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -121,27 +143,27 @@
 
             <!-- CONTATO -->
             <!-- modify this form HTML and place wherever you want your form -->
-            <section class="contact js-contact" data-page="contact">
+            <section class="contact js-contact" data-page="contact" data-title="Contato">
                 <form class="form-contact" id="my-form" action="https://formspree.io/f/mbjqalwe" method="POST">
 
                     <div class="form-contact__group">
                         <label for="name">Nome</label>
-                        <input type="name" class="form-contact__control" name="name" />
+                        <input type="name" class="form-contact__control" name="name" required />
                     </div>
 
                     <div class="form-contact__group">
                         <label>Email:</label>
-                        <input type="email" class="form-contact__control" name="email" />
+                        <input type="email" class="form-contact__control" name="email" required />
                     </div>
 
                     <div class="form-contact__group">
                         <label>Message:</label>
-                        <input type="text" class="form-contact__control" name="message" />
+                        <input type="text" class="form-contact__control" name="message" required/>
                     </div>
 
                     <button id="my-form-button" class="form-contact__button">Submit</button>
 
-                    <p id="my-form-status"></p>
+                    <p id="my-form-status" class="form-contact__message"></p>
                 </form>
             </section>
 
@@ -155,16 +177,22 @@
                     event.preventDefault();
                     var status = document.getElementById("my-form-status");
                     var data = new FormData(event.target);
+                    
                     fetch(event.target.action, {
+
                     method: form.method,
                     body: data,
                     headers: {
                         'Accept': 'application/json'
                     }
+                    
                     }).then(response => {
+                        
+                    status.style.visibility="visible";
                     status.innerHTML = "Thanks for your submission!";
                     form.reset()
                     }).catch(error => {
+                    status.style.visibility="visible";
                     status.innerHTML = "Oops! There was a problem submitting your form"
                     });
                 }
