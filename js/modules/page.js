@@ -1,4 +1,4 @@
-import Escrever from "./escrever.js";
+import initEscrever from "./escrever.js";
 function initPage() {
 
     const home = document.querySelector('.js-home');
@@ -40,12 +40,15 @@ function initPage() {
 
                     pageActive.classList.add('active');
                     
-                    titlePag.innerText = pageActive.getAttribute('data-title');
-                    
-                        Escrever(titlePag);
+
+                    // opc1
+                    // initEscrever(pageActive.getAttribute('data-title'),titlePag);
 
                     
-                    // titlePag.innerText = pageActive.getAttribute('data-title');
+                    // opc 2
+                    titlePag.innerText = pageActive.getAttribute('data-title');
+                    initEscrever(titlePag);
+
 
                 }
 
