@@ -46,8 +46,8 @@ function initPage() {
 
                     
                     // opc 2
-                    titlePag.innerText = pageActive.getAttribute('data-title');
-                    initEscrever(titlePag);
+                    titlePag.textContent = pageActive.getAttribute('data-title');
+//                     initEscrever(titlePag);
 
 
                 }
