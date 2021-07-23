@@ -42,7 +42,7 @@ function initPage() {
                     
                     setTimeout(function() {
                         Escrever(pageActive.getAttribute('data-title'),titlePag);
-                    });
+                    },100);
 
                     
                     // titlePag.innerText = pageActive.getAttribute('data-title');
