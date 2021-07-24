@@ -17,5 +17,5 @@ export default function initEscrever(text) {
         
         ++i;
     }
-    intervalWriter = setInterval(typeWriter, 900 / textSplit.length);
+    intervalWriter = setInterval(typeWriter, 940 / textSplit.length);
 }
