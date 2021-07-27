@@ -1,0 +1,6 @@
+{
+    "[html]": {
+        // "files.encoding": "iso88591"
+        "files.encoding": "utf8"
+    },
+}
