@@ -18,12 +18,12 @@ js/modules/canvas.js
 # next.js
 
 # production
-sass
+/sass
 
 # misc
 
 # debug
-.vscode
-.sass-cache
+/.vscode
+/.sass-cache
 css/.site.css.map
 # local env files
