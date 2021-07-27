@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+
+$fontPrimary: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fontSecondary: 'Cairo', sans-serif;
+
 img {
     max-width: 100%;
 }
@@ -8,4 +12,25 @@ img {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+}
+
+body {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin typo($font:$fontPrimary, $size:1em, $weight:400) {
+
+    font-family: $fontPrimary;
+    font-size: $size;
+    font-weight: $weight;
+    
+}
+
+* {
+    transition: all 1s ease;
+}
+
+.l-header__logo h1 {
+    font-size: 0;
+    transition: 0s;
 }

@@ -1,0 +1,29 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+index copy.html
+index copy 2.html
+index copy 3.html
+js/animation1.js
+js/animation2.js
+js/animation3.js
+js/animation4.js
+js/modules/escrever.js
+js/modules/page copy.js
+js/modules/canvas.js
+# next.js
+
+# production
+sass
+
+# misc
+
+# debug
+.vscode
+.sass-cache
+css/.site.css.map
+# local env files
